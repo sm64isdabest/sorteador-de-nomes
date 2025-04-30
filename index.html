@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorteador de Nomes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎲 Sorteador de Nomes</h1>
+
+    <label for="nomes">Digite os nomes (1 por linha):</label>
+    <textarea id="nomes" placeholder="Ex: Ana&#10;João&#10;Carlos"></textarea>
+    <span id="field-required">Digite pelo menos 2 nomes.</span>
+
+    <br>
+
+    <label for="quantia">Digite um número:</label>
+    <input type="number" id="quantia" placeholder="1">
+    </input>
+    <span id="field-required">Digite um número válido.</span>
+
+    <div id="parametrosExtras">
+    </div>
+
+    <button onclick="sortear()">Sortear</button>
+
+    <div id="resultado">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
